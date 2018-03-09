@@ -80,12 +80,20 @@ Public Class Updater
 
         Dim myURI As Uri = New Uri(strRemoteURL)
         Using wc As WebClient = New WebClient
-            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls Or SecurityProtocolType.Tls11 Or SecurityProtocolType.Tls12 Or SecurityProtocolType.Ssl3
+
             Try
-            wc.DownloadFile(myURI, strLocalFile)
+                ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls Or SecurityProtocolType.Tls11 Or SecurityProtocolType.Tls12 Or SecurityProtocolType.Ssl3
+            Catch ex As Exception
+                MsgBox("Error:" & vbCrLf & vbCrLf & ex.Message, MsgBoxStyle.Exclamation)
+            End Try
+
+            Try
+                wc.DownloadFile(myURI, strLocalFile)
             Catch ex As Exception
                 MsgBox(ex.Message, MsgBoxStyle.Exclamation)
             End Try
+
+
         End Using
 
         If Not IO.File.Exists(strLocalFile) Then

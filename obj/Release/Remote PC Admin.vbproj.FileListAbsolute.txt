@@ -11,3 +11,4 @@ C:\Users\qojmo2\Google Drive\DEV\VisualStudio\Remote PC Admin\obj\Release\Remote
 C:\Users\qojmo2\Google Drive\DEV\VisualStudio\Remote PC Admin\obj\Release\Remote PC Admin.vbproj.GenerateResource.Cache
 C:\Users\qojmo2\Google Drive\DEV\VisualStudio\Remote PC Admin\obj\Release\Remote PC Admin.exe
 C:\Users\qojmo2\Google Drive\DEV\VisualStudio\Remote PC Admin\obj\Release\Remote PC Admin.xml
+C:\Users\qojmo2\Google Drive\DEV\VisualStudio\Remote PC Admin\obj\Release\Remote PC Admin.vbprojResolveAssemblyReference.cache
