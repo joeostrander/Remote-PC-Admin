@@ -1274,7 +1274,7 @@ Public Class FormRemotePCAdmin
     Public strPassword As String = ""
 
     Private strUpdateCheckURL As String = "https://raw.githubusercontent.com/joeostrander/Remote-PC-Admin/master/AssemblyInfo.vb"
-    Private strUpdateDownloadURL As String = "https://github.com/joeostrander/Remote-PC-Admin/raw/master/bin/Remote PC Admin.exe"
+    Private strUpdateDownloadURL As String = "https://github.com/joeostrander/Remote-PC-Admin/raw/master/bin/Release/Remote%20PC%20Admin.exe"
 
 
     Private PreviousTab As String = "TabSystemInfo"

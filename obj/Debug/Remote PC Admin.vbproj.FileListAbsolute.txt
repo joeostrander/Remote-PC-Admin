@@ -1,1 +1,14 @@
 C:\Users\qojmo2\Google Drive\DEV\VisualStudio\Remote PC Admin\bin\Debug\Remote PC Admin.exe.config
+C:\Users\qojmo2\Google Drive\DEV\VisualStudio\Remote PC Admin\bin\Debug\Remote PC Admin.exe
+C:\Users\qojmo2\Google Drive\DEV\VisualStudio\Remote PC Admin\bin\Debug\Remote PC Admin.xml
+C:\Users\qojmo2\Google Drive\DEV\VisualStudio\Remote PC Admin\obj\Debug\Remote PC Admin.vbprojResolveAssemblyReference.cache
+C:\Users\qojmo2\Google Drive\DEV\VisualStudio\Remote PC Admin\obj\Debug\Remote_PC_Admin.AboutBox1.resources
+C:\Users\qojmo2\Google Drive\DEV\VisualStudio\Remote PC Admin\obj\Debug\Remote_PC_Admin.FindText.resources
+C:\Users\qojmo2\Google Drive\DEV\VisualStudio\Remote PC Admin\obj\Debug\Remote_PC_Admin.FormProcessAdd.resources
+C:\Users\qojmo2\Google Drive\DEV\VisualStudio\Remote PC Admin\obj\Debug\Remote_PC_Admin.Login.resources
+C:\Users\qojmo2\Google Drive\DEV\VisualStudio\Remote PC Admin\obj\Debug\Remote_PC_Admin.Resources.resources
+C:\Users\qojmo2\Google Drive\DEV\VisualStudio\Remote PC Admin\obj\Debug\Remote_PC_Admin.FormRemotePCAdmin.resources
+C:\Users\qojmo2\Google Drive\DEV\VisualStudio\Remote PC Admin\obj\Debug\Remote_PC_Admin.FormServiceAdd.resources
+C:\Users\qojmo2\Google Drive\DEV\VisualStudio\Remote PC Admin\obj\Debug\Remote PC Admin.vbproj.GenerateResource.Cache
+C:\Users\qojmo2\Google Drive\DEV\VisualStudio\Remote PC Admin\obj\Debug\Remote PC Admin.exe
+C:\Users\qojmo2\Google Drive\DEV\VisualStudio\Remote PC Admin\obj\Debug\Remote PC Admin.xml

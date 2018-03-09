@@ -1,0 +1,47 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Remote PC Admin
+</name>
+</assembly>
+<members>
+<member name="T:Remote_PC_Admin.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Remote_PC_Admin.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Remote_PC_Admin.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Remote_PC_Admin.My.Resources.Resources.hal_blue">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="M:Remote_PC_Admin.completionHandler.MyHandler.Done(System.Object,System.Management.ObjectReadyEventArgs)">
+ <summary>
+ Trigger Done event when InvokeMethod is complete
+ </summary>
+</member>
+<member name="P:Remote_PC_Admin.completionHandler.MyHandler.IsComplete">
+ <summary>
+ Get property IsComplete
+ </summary>
+</member>
+<member name="P:Remote_PC_Admin.completionHandler.MyHandler.ReturnObject">
+ <summary>
+ Property allows accessing the result 
+ object in the main function
+ </summary>
+</member>
+</members>
+</doc>
