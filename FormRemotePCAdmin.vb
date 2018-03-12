@@ -3490,15 +3490,11 @@ Public Class FormRemotePCAdmin
         c = lstSoftware.SelectedIndices(0)
         strInstallType = lstSoftware.Items(c).SubItems(1).Text
         strUninstallString = lstSoftware.Items(c).SubItems(2).Text
-        'If it's a local host, make sure there's an uninstall string
-        If IsLocalComputer(strComputer) Then
-            If strUninstallString = "" Then e.Cancel = True
+        If strUninstallString = "" Then
             UninstallToolStripMenuItem.Visible = False
         Else
             UninstallToolStripMenuItem.Visible = True
-            'If strInstallType <> "MSI" Then e.Cancel = True
         End If
-
 
     End Sub
 
