@@ -3315,7 +3315,10 @@ Public Class FormRemotePCAdmin
                 Dim frmProcAdd As FormProcessAdd = New FormProcessAdd
                 frmProcAdd.TextBoxCommand.Text = strUninstallString
 
-                frmProcAdd.ShowDialog()
+                If frmProcAdd.ShowDialog() = DialogResult.OK Then
+                    ExecuteProcess(strProcessCommand, strProcessWorkingDir)
+                End If
+
 
                 'MsgBox(strComputer & vbCrLf & vbCrLf & "Uninstall request submitted... check event log for results.", MsgBoxStyle.Information)
             Case Else
