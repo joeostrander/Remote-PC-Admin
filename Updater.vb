@@ -28,7 +28,7 @@ Public Class Updater
                     If matches.Count = 0 Then Exit Sub
 
                     Dim strLatestVersion As String = matches(0).Groups("version").Value
-
+                    Console.WriteLine(strLatestVersion)
                     Try
                         Dim ver_latest As New Version(strLatestVersion)
                         Dim ver_current As New Version(Application.ProductVersion)

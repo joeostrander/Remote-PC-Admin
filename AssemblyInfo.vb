@@ -30,7 +30,7 @@ Imports System.Management
 ' You can specify all the values or you can default the Build and Revision Numbers 
 ' by using the '*' as shown below:
 
-<Assembly: AssemblyVersion("2.5.2.0")>
+<Assembly: AssemblyVersion("2.5.3.0")>
 
-<Assembly: AssemblyFileVersion("2.5.2.0")>
+<Assembly: AssemblyFileVersion("2.5.3.0")>
 <Assembly: ComVisibleAttribute(False)> 

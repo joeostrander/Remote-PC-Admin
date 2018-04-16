@@ -138,9 +138,9 @@ Public Class FormRemotePCAdmin
     Friend WithEvents RefreshToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AboutToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CheckForUpdatesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents CopyToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents CopyToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents CopyAsTableToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents CopySoftwareListToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents CopySoftwareTableToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents CopyProcessesAsTableToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CopyAsTableToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents FindToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ColumnHeaderCreated As System.Windows.Forms.ColumnHeader
@@ -170,8 +170,8 @@ Public Class FormRemotePCAdmin
         Me.lstSoftware = New System.Windows.Forms.ListView()
         Me.ContextMenuStripSoftware = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.UninstallToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CopyToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CopyToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CopySoftwareListToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CopySoftwareTableToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TabSystemRestore = New System.Windows.Forms.TabPage()
         Me.LabelSystemRestore = New System.Windows.Forms.Label()
         Me.GroupBoxSystemRestore = New System.Windows.Forms.GroupBox()
@@ -220,7 +220,7 @@ Public Class FormRemotePCAdmin
         Me.EndProcessToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ViewPathToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ShowInExplorerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CopyAsTableToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CopyProcessesAsTableToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ShowCPUToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TabEventLogs = New System.Windows.Forms.TabPage()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -429,7 +429,7 @@ Public Class FormRemotePCAdmin
         '
         'ContextMenuStripSoftware
         '
-        Me.ContextMenuStripSoftware.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UninstallToolStripMenuItem, Me.CopyToolStripMenuItem1, Me.CopyToolStripMenuItem2})
+        Me.ContextMenuStripSoftware.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UninstallToolStripMenuItem, Me.CopySoftwareListToolStripMenuItem, Me.CopySoftwareTableToolStripMenuItem})
         Me.ContextMenuStripSoftware.Name = "ContextMenuStripSoftware"
         Me.ContextMenuStripSoftware.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
         Me.ContextMenuStripSoftware.ShowImageMargin = False
@@ -441,17 +441,17 @@ Public Class FormRemotePCAdmin
         Me.UninstallToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
         Me.UninstallToolStripMenuItem.Text = "&Uninstall"
         '
-        'CopyToolStripMenuItem1
+        'CopySoftwareListToolStripMenuItem
         '
-        Me.CopyToolStripMenuItem1.Name = "CopyToolStripMenuItem1"
-        Me.CopyToolStripMenuItem1.Size = New System.Drawing.Size(147, 22)
-        Me.CopyToolStripMenuItem1.Text = "&Copy Software List"
+        Me.CopySoftwareListToolStripMenuItem.Name = "CopySoftwareListToolStripMenuItem"
+        Me.CopySoftwareListToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
+        Me.CopySoftwareListToolStripMenuItem.Text = "&Copy Software List"
         '
-        'CopyToolStripMenuItem2
+        'CopySoftwareTableToolStripMenuItem
         '
-        Me.CopyToolStripMenuItem2.Name = "CopyToolStripMenuItem2"
-        Me.CopyToolStripMenuItem2.Size = New System.Drawing.Size(147, 22)
-        Me.CopyToolStripMenuItem2.Text = "Copy as &Table"
+        Me.CopySoftwareTableToolStripMenuItem.Name = "CopySoftwareTableToolStripMenuItem"
+        Me.CopySoftwareTableToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
+        Me.CopySoftwareTableToolStripMenuItem.Text = "Copy as &Table"
         '
         'TabSystemRestore
         '
@@ -827,12 +827,12 @@ Public Class FormRemotePCAdmin
         '
         'ContextMenuStripProcesses
         '
-        Me.ContextMenuStripProcesses.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EndProcessToolStripMenuItem, Me.ViewPathToolStripMenuItem, Me.ShowInExplorerToolStripMenuItem, Me.CopyAsTableToolStripMenuItem, Me.ShowCPUToolStripMenuItem})
+        Me.ContextMenuStripProcesses.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EndProcessToolStripMenuItem, Me.ViewPathToolStripMenuItem, Me.ShowInExplorerToolStripMenuItem, Me.CopyProcessesAsTableToolStripMenuItem, Me.ShowCPUToolStripMenuItem})
         Me.ContextMenuStripProcesses.Name = "ContextMenuStripProcesses"
         Me.ContextMenuStripProcesses.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
         Me.ContextMenuStripProcesses.ShowCheckMargin = True
         Me.ContextMenuStripProcesses.ShowImageMargin = False
-        Me.ContextMenuStripProcesses.Size = New System.Drawing.Size(185, 114)
+        Me.ContextMenuStripProcesses.Size = New System.Drawing.Size(185, 136)
         '
         'EndProcessToolStripMenuItem
         '
@@ -852,11 +852,11 @@ Public Class FormRemotePCAdmin
         Me.ShowInExplorerToolStripMenuItem.Size = New System.Drawing.Size(184, 22)
         Me.ShowInExplorerToolStripMenuItem.Text = "&Show in Explorer"
         '
-        'CopyAsTableToolStripMenuItem
+        'CopyProcessesAsTableToolStripMenuItem
         '
-        Me.CopyAsTableToolStripMenuItem.Name = "CopyAsTableToolStripMenuItem"
-        Me.CopyAsTableToolStripMenuItem.Size = New System.Drawing.Size(184, 22)
-        Me.CopyAsTableToolStripMenuItem.Text = "&Copy as Table"
+        Me.CopyProcessesAsTableToolStripMenuItem.Name = "CopyProcessesAsTableToolStripMenuItem"
+        Me.CopyProcessesAsTableToolStripMenuItem.Size = New System.Drawing.Size(184, 22)
+        Me.CopyProcessesAsTableToolStripMenuItem.Text = "&Copy as Table"
         '
         'ShowCPUToolStripMenuItem
         '
@@ -1188,7 +1188,7 @@ Public Class FormRemotePCAdmin
         '
         Me.RefreshToolStripMenuItem.Name = "RefreshToolStripMenuItem"
         Me.RefreshToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F5
-        Me.RefreshToolStripMenuItem.Size = New System.Drawing.Size(132, 22)
+        Me.RefreshToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.RefreshToolStripMenuItem.Text = "&Refresh"
         '
         'HelpToolStripMenuItem
@@ -3924,7 +3924,7 @@ Public Class FormRemotePCAdmin
 
 
 
-    Private Sub CopyToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CopyToolStripMenuItem1.Click
+    Private Sub CopyToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CopySoftwareListToolStripMenuItem.Click
         Dim strAllSoftware As String = ""
 
         For Each itm As ListViewItem In lstSoftware.Items
@@ -3961,7 +3961,7 @@ Public Class FormRemotePCAdmin
         Clipboard.SetText(strAllText)
     End Sub
 
-    Private Sub CopyAsTableToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CopyAsTableToolStripMenuItem.Click
+    Private Sub CopyAsTableToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CopyProcessesAsTableToolStripMenuItem.Click
         CopyAsTable(sender)
     End Sub
 
@@ -3981,6 +3981,10 @@ Public Class FormRemotePCAdmin
         Else
             lstProcesses.Columns(idx).Width = 0
         End If
+    End Sub
+
+    Private Sub CopySoftwareTableToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CopySoftwareTableToolStripMenuItem.Click
+        CopyAsTable(sender)
     End Sub
 End Class
 
