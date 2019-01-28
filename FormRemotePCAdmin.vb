@@ -3985,6 +3985,7 @@ Public Class FormRemotePCAdmin
 
     Private Sub CopySoftwareTableToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CopySoftwareTableToolStripMenuItem.Click
         CopyAsTable(sender)
+        'test
     End Sub
 End Class
 
